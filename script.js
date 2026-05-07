@@ -120,12 +120,11 @@ function selectAnswer(event) {
 
     const selectButton = event.target;
     const iscorrect = selectButton.dataset.correct === "true"
-
-
+    
     Array.from(answercontainer.children).forEach((button) => {
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
-        }else{
+        }else{                                                              
             button.classList.add("incorrect");
         }
     });
